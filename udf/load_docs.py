@@ -99,39 +99,46 @@ def process(task):
 
 	global superviser
 
-	locationext.extract(doc)
+	try:
 
-	fossilext.extract(doc)
+		locationext.extract(doc)
 
-	intervalext.extract(doc)
+		fossilext.extract(doc)
 
-	formationext.extract(doc)
+		intervalext.extract(doc)
 
-	doc.cleanup_entities()
+		formationext.extract(doc)
 
-	samesentrel.extract(doc)
+		doc.cleanup_entities()
 
-	tableexttext.extract(doc)
+		samesentrel.extract(doc)
 
-	tablecaprel.extract(doc)
+		tableexttext.extract(doc)
 
-	sectionrel.extract(doc)
+		tablecaprel.extract(doc)
 
-	listrel.extract(doc)
+		sectionrel.extract(doc)
 
-	jointrel.extract(doc)
+		listrel.extract(doc)
 
-	title_rel.extract(doc)
+		jointrel.extract(doc)
 
-	doc.assign_ids()
+		title_rel.extract(doc)
 
-	fo = codecs.open(BASE_FOLDER + "/tmp/" + DOCID + ".ent", 'w', 'utf-8')
-	doc.get_entities_candidates(fo)
-	fo.close()
+		doc.assign_ids()
 
-	fo = codecs.open(BASE_FOLDER + "/tmp/" + DOCID + ".rel", 'w', 'utf-8')
-	doc.get_relation_candidates(superviser, fo)
-	fo.close()
+		fo = codecs.open(BASE_FOLDER + "/tmp/" + DOCID + ".ent", 'w', 'utf-8')
+		doc.get_entities_candidates(fo)
+		fo.close()
+
+		fo = codecs.open(BASE_FOLDER + "/tmp/" + DOCID + ".rel", 'w', 'utf-8')
+		doc.get_relation_candidates(superviser, fo)
+		fo.close()
+
+	except:
+		donothing = True
+
+
 
 	#lock.acquire()
 	#print json.dumps({"docid":DOCID, "document":serialize(doc)})
