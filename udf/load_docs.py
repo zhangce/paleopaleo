@@ -163,7 +163,7 @@ def do():
 
 		#tasks.append(task)
 
-	pool = Pool(4, initializer, (lock,))
+	pool = Pool(60, initializer, (lock,))
 	pool.map(process, tasks)
 
 #import cProfile
