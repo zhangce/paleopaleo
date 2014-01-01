@@ -33,7 +33,7 @@ class FossilEntityExtractor(object):
 
 			if not os.path.isdir(docdir + '/' +  folder):
 				continue
-
+			"""
 			try:
 				for l in open(docdir + '/' +  folder + '/input.text'):
 					ss = l.rstrip().split('\t')
@@ -45,6 +45,7 @@ class FossilEntityExtractor(object):
 						prev = ss[1].lower()
 			except:
 				donothing = True
+			"""
 			
 		log("LOADED DICT")
 
@@ -95,8 +96,8 @@ class FossilEntityExtractor(object):
 				parents = parents.split(',')
 
 				for name in names:
-					if name.lower() in words:
-						self.dict_locations[name.lower()] = "1"
+					#if name.lower() in words:
+					self.dict_locations[name.lower()] = "1"
 
 	def extract(self, doc):
 

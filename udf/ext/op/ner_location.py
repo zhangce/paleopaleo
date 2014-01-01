@@ -68,7 +68,7 @@ class LocationEntityExtractor:
             if not os.path.isdir(docdir + '/' +  folder):
                 continue
 
-
+            """
             try:
                 for l in open(docdir + '/' +  folder + '/input.text'):
                     ss = l.rstrip().split('\t')
@@ -80,6 +80,7 @@ class LocationEntityExtractor:
                         prev = ss[1].lower()
             except:
                 donothing = True
+            """
 
             
         log("LOADED DICT")
@@ -111,8 +112,8 @@ class LocationEntityExtractor:
                 added = False
                 for name in names:
                     name = name.lower()
-                    if not (name in words):
-                        continue
+                    #if not (name in words):
+                    #    continue
                     #print name
                     if name not in locs: locs[name] = {}
                     locs[name][id] = "1"
