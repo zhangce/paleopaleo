@@ -16,6 +16,13 @@ BASE_DIR=`pwd`
 
 #psql -U $DB_USER -c "drop schema if exists public cascade; create schema public;" $DB_NAME
 
+psql -U $DB_USER -c "delete from documents;"             $DB_NAME
+psql -U $DB_USER -c "delete from entities;"             $DB_NAME
+psql -U $DB_USER -c "delete from relations_taxonomy;"             $DB_NAME
+psql -U $DB_USER -c "delete from relations_formation;"             $DB_NAME
+psql -U $DB_USER -c "delete from relations_formationtemporal;"             $DB_NAME
+psql -U $DB_USER -c "delete from relations_formationlocation;"             $DB_NAME
+
 psql -U $DB_USER -c "CREATE TABLE documents (id bigserial primary key, \
 											 docid  text,               \
 											 document text);"             $DB_NAME

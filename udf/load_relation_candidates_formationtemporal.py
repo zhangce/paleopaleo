@@ -9,9 +9,9 @@ superviser.loadDict()
 
 #superviser.extract()
 
-for row in get_inputs():
-
-	docid = row["documents.docid"]
-	doc = deserialize(row["documents.document"])
-
-	doc.get_relation_candidates(superviser, {'ROCK'}, {'INTERVAL'})
+import os
+for f in os.listdir(BASE_FOLDER + "/tmp/"):
+	if f.endswith('.rel'):
+		for l in open(BASE_FOLDER + "/tmp/" + f):
+			if '"type": "FORMATIONTEMPORAL"' in l:
+				print l.rstrip()
