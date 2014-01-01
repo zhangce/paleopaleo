@@ -1,0 +1,3 @@
+python cali.py /Users/czhang/Desktop/paleodeepdive.language/target/calibration_data/ relations_is_correct_FORMATION ~/Desktop/rel_FORMATION
+python cali.py /Users/czhang/Desktop/paleodeepdive.language/target/calibration_data/ relations_is_correct_FORMATIONLOCATION ~/Desktop/rel_FORMATIONLOCATION
+python cali.py /Users/czhang/Desktop/paleodeepdive.language/target/calibration_data/ relations_is_correct_FORMATIONTEMPORAL ~/Desktop/rel_FORMATIONTEMPORAL

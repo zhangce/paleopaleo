@@ -1,0 +1,20 @@
+'LOADED DICT'
+0
+100000
+200000
+300000
+400000
+500000
+600000
+700000
+800000
+900000
+1000000
+1100000
+1200000
+Traceback (most recent call last):
+  File "load_docs.py", line 27, in <module>
+    locationext.loadDict(INPUT_FOLDER)
+  File "/Users/czhang/Desktop/paleodeepdive.language/examples/paleo/udf/ext/op/ner_location.py", line 98, in loadDict
+    (id, ent, rank, names, parents) = l.rstrip('\n').split('\t')
+KeyboardInterrupt

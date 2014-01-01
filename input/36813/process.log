@@ -1,0 +1,24 @@
+000 (488984.000.000) 10/28 14:41:10 Job submitted from host: <144.92.142.172:9620?sock=19151_5432_3>
+    DAG Node: 36813+36813
+...
+001 (488984.000.000) 10/28 14:41:53 Job executing on host: <128.104.58.91:51177>
+...
+006 (488984.000.000) 10/28 14:42:01 Image size of job updated: 112580
+	34  -  MemoryUsage of job (MB)
+	34440  -  ResidentSetSize of job (KB)
+...
+005 (488984.000.000) 10/28 14:42:40 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:37, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:37, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	3332738  -  Run Bytes Sent By Job
+	2767917  -  Run Bytes Received By Job
+	3332738  -  Total Bytes Sent By Job
+	2767917  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :    31105  2000000  21474785
+	   Memory (MB)          :       34     2000      2000
+...

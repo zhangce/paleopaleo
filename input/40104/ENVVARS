@@ -1,0 +1,11 @@
+chtcruntop = /scratch/czhang/journal_wrapper/ChtcRun
+cmdtorun = sh do.sh
+file = 40104
+jobfolder = /scratch/czhang/journal_wrapper/ChtcRun/TOPROC_PaleoOCT13K/40104/
+jobsubdag = /scratch/czhang/journal_wrapper/ChtcRun/RS_TOPROC_PaleoOCT13K/40104/40104_dag
+jobtemplateloc = /scratch/czhang/journal_wrapper/ChtcRun
+passtochtcwrapper = 
+runfolder = /scratch/czhang/journal_wrapper/ChtcRun/RS_TOPROC_PaleoOCT13K/40104/
+sharedfolder = /scratch/czhang/journal_wrapper/ChtcRun/TOPROC_PaleoOCT13K/shared/
+submitfileloc = /scratch/czhang/journal_wrapper/ChtcRun/RS_TOPROC_PaleoOCT13K/40104
+type = Other

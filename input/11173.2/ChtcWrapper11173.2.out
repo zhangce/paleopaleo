@@ -1,0 +1,421 @@
+Use of uninitialized value $version in concatenation (.) or string at ./chtcinnerwrapper line 103, <MA> line 212.
+What do we have for version? <>
+--version should be used for Matlab, R and Python
+Controls: <do.sh>
+Use of uninitialized value $tarball in concatenation (.) or string at ./chtcinnerwrapper line 280.
+Use of uninitialized value $installfrom in concatenation (.) or string at ./chtcinnerwrapper line 280.
+Running: <Other   sh 11173.2 do.sh>
+Running here: e161.chtc.wisc.edu
+TMP=/var/lib/condor/execute/slot4/dir_15170
+_CONDOR_JOB_IWD=/var/lib/condor/execute/slot4/dir_15170
+_CONDOR_SLOT=slot4
+_CONDOR_MACHINE_AD=/var/lib/condor/execute/slot4/dir_15170/.machine.ad
+TEMP=/var/lib/condor/execute/slot4/dir_15170
+TMPDIR=/var/lib/condor/execute/slot4/dir_15170
+_CONDOR_SCRATCH_DIR=/var/lib/condor/execute/slot4/dir_15170
+_CONDOR_JOB_AD=/var/lib/condor/execute/slot4/dir_15170/.job.ad
+_CONDOR_JOB_PIDS=
+PATH=/usr/local/bin:/usr/kerberos/bin:/usr/bin:/bin
+
+
+ ******** My Verison = <<<<1.08>>>> 
+
+Starting to run <sh> <11173.2> <do.sh>
+Use of uninitialized value $tarball in concatenation (.) or string at ./chtcinnerwrapper line 306.
+Use of uninitialized value $installfrom in concatenation (.) or string at ./chtcinnerwrapper line 306.
+Using <Other> <> <>
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda6            900198956  53617668 846581288   6% /var/lib/condor/execute
+/var/lib/condor/execute/slot4/dir_15170
+URL: <<http://proxy.chtc.wisc.edu/SQUID/>>
+Curl attempt:<curl -H "Pragma:" --fail -o SLIBS1.tar.gz http://proxy.chtc.wisc.edu/SQUID/SLIBS1.tar.gz>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 4593k  100 4593k    0     0  94.3M      0 --:--:-- --:--:-- --:--:-- 97.5M
+Curl result <0>
+TYPE = Other, checking for operating system dependent bin for<sl6>
+In HandleSl5Sl6Bins for OS <sl6> ******************************************
+/var/lib/condor/execute/slot4/dir_15170
+AuditLog.11173.2
+CURLTIME_15284
+ChtcWrapper11173.2.out
+SLIBS1.tar.gz
+SS
+_condor_stderr
+_condor_stdout
+chtcinnerwrapper
+condor_exec.exe
+cuneiform-page-0001.html
+cuneiform-page-0002.html
+cuneiform-page-0003.html
+cuneiform-page-0004.html
+cuneiform-page-0005.html
+cuneiform-page-0006.html
+cuneiform-page-0007.html
+cuneiform-page-0008.html
+cuneiform-page-0009.html
+cuneiform-page-0010.html
+cuneiform-page-0011.html
+cuneiform-page-0012.html
+cuneiform-page-0013.html
+cuneiform-page-0014.html
+cuneiform-page-0015.html
+cuneiform-page-0016.html
+cuneiform-page-0017.html
+cuneiform-page-0018.html
+cuneiform-page-0019.html
+cuneiform-page-0020.html
+cuneiform-page-0021.html
+cuneiform-page-0022.html
+cuneiform-page-0023.html
+cuneiform-page-0024.html
+cuneiform-page-0025.html
+cuneiform-page-0026.html
+cuneiform-page-0027.html
+cuneiform-page-0028.html
+cuneiform-page-0029.html
+cuneiform-page-0030.html
+cuneiform-page-0031.html
+cuneiform-page-0032.html
+cuneiform-page-0033.html
+cuneiform-page-0034.html
+cuneiform-page-0035.html
+cuneiform-page-0036.html
+cuneiform-page-0037.html
+cuneiform-page-0038.html
+cuneiform-page-0039.html
+cuneiform-page-0040.html
+cuneiform-page-0041.html
+cuneiform-page-0042.html
+cuneiform-page-0043.html
+cuneiform-page-0044.html
+cuneiform-page-0045.html
+cuneiform-page-0046.html
+cuneiform-page-0047.html
+cuneiform-page-0048.html
+cuneiform-page-0049.html
+cuneiform-page-0050.html
+cuneiform-page-0051.html
+cuneiform-page-0052.html
+cuneiform-page-0053.html
+cuneiform-page-0054.html
+cuneiform-page-0055.html
+cuneiform-page-0056.html
+cuneiform-page-0057.html
+cuneiform-page-0058.html
+cuneiform-page-0059.html
+cuneiform-page-0060.html
+cuneiform-page-0061.html
+cuneiform-page-0062.html
+cuneiform-page-0063.html
+cuneiform-page-0064.html
+cuneiform-page-0065.html
+cuneiform-page-0066.html
+cuneiform-page-0067.html
+cuneiform-page-0068.html
+cuneiform-page-0069.html
+cuneiform-page-0070.html
+cuneiform-page-0071.html
+cuneiform-page-0072.html
+cuneiform-page-0073.html
+cuneiform-page-0074.html
+cuneiform-page-0075.html
+cuneiform-page-0076.html
+cuneiform-page-0077.html
+cuneiform-page-0078.html
+cuneiform-page-0079.html
+cuneiform-page-0080.html
+cuneiform-page-0081.html
+cuneiform-page-0082.html
+cuneiform-page-0083.html
+cuneiform-page-0084.html
+cuneiform-page-0085.html
+cuneiform-page-0086.html
+cuneiform-page-0087.html
+cuneiform-page-0088.html
+cuneiform-page-0089.html
+cuneiform-page-0090.html
+cuneiform-page-0091.html
+cuneiform-page-0092.html
+cuneiform-page-0093.html
+cuneiform-page-0094.html
+cuneiform-page-0095.html
+cuneiform-page-0096.html
+cuneiform-page-0097.html
+cuneiform-page-0098.html
+cuneiform-page-0099.html
+cuneiform-page-0100.html
+cuneiform-page-0101.html
+cuneiform-page-0102.html
+cuneiform-page-0103.html
+cuneiform-page-0104.html
+cuneiform-page-0105.html
+cuneiform_fonttype
+do.sh
+input.text
+looking to untar <sl6bin.tar.gz> ********************************************
+looking for bin <sl6bin> ********************************************
+HASHBIN has value ZERO ???????????????? *************************
+version not defined. No runtime needed. Moving on.
+SANDBOX SPACE:
+27M	.
+Tar file to extract is <11173.2.tar.gz>
+Use of uninitialized value in concatenation (.) or string at ./chtcinnerwrapper line 670.
+Running here: e161.chtc.wisc.edu
+TMP=/var/lib/condor/execute/slot4/dir_15170
+_CONDOR_JOB_IWD=/var/lib/condor/execute/slot4/dir_15170
+_CONDOR_SLOT=slot4
+_CONDOR_MACHINE_AD=/var/lib/condor/execute/slot4/dir_15170/.machine.ad
+TEMP=/var/lib/condor/execute/slot4/dir_15170
+TMPDIR=/var/lib/condor/execute/slot4/dir_15170
+_CONDOR_SCRATCH_DIR=/var/lib/condor/execute/slot4/dir_15170
+_CONDOR_JOB_AD=/var/lib/condor/execute/slot4/dir_15170/.job.ad
+_CONDOR_JOB_PIDS=
+PATH=.:/usr/local/bin:/usr/kerberos/bin:/usr/bin:/bin
+LD_LIBRARY_PATH=/var/lib/condor/execute/slot4/dir_15170/SS:
+SANDBOX SPACE:
+27M	.
+total 12956
+-rw-r--r-- 1 slot4 slot4     115 Oct 28 15:56 AuditLog.11173.2
+-rw-r--r-- 1 slot4 slot4     118 Oct 28 15:56 CURLTIME_15284
+-rw-r--r-- 1 slot4 slot4    5914 Oct 28 15:56 ChtcWrapper11173.2.out
+-rw-r--r-- 1 slot4 slot4 4703655 Oct 28 15:56 SLIBS1.tar.gz
+drwxr-xr-x 2 slot4 slot4    4096 Oct 25  2011 SS
+-rw------- 1 slot4 slot4     317 Oct 28 15:56 _condor_stderr
+-rw------- 1 slot4 slot4     712 Oct 28 15:56 _condor_stdout
+-rwxr-xr-x 1 slot4 slot4   35251 Oct 28 15:56 chtcinnerwrapper
+-rwxr-xr-x 1 slot4 slot4    5393 Oct 28 15:56 condor_exec.exe
+-rwxr-xr-x 1 slot4 slot4    5587 Oct 28 15:56 cuneiform-page-0001.html
+-rwxr-xr-x 1 slot4 slot4    2575 Oct 28 15:56 cuneiform-page-0002.html
+-rwxr-xr-x 1 slot4 slot4     681 Oct 28 15:56 cuneiform-page-0003.html
+-rwxr-xr-x 1 slot4 slot4    4536 Oct 28 15:56 cuneiform-page-0004.html
+-rwxr-xr-x 1 slot4 slot4   19487 Oct 28 15:56 cuneiform-page-0005.html
+-rwxr-xr-x 1 slot4 slot4   33137 Oct 28 15:56 cuneiform-page-0006.html
+-rwxr-xr-x 1 slot4 slot4    3542 Oct 28 15:56 cuneiform-page-0007.html
+-rwxr-xr-x 1 slot4 slot4   86160 Oct 28 15:56 cuneiform-page-0008.html
+-rwxr-xr-x 1 slot4 slot4  129308 Oct 28 15:56 cuneiform-page-0009.html
+-rwxr-xr-x 1 slot4 slot4  116785 Oct 28 15:56 cuneiform-page-0010.html
+-rwxr-xr-x 1 slot4 slot4  119592 Oct 28 15:56 cuneiform-page-0011.html
+-rwxr-xr-x 1 slot4 slot4   34880 Oct 28 15:56 cuneiform-page-0012.html
+-rwxr-xr-x 1 slot4 slot4  115045 Oct 28 15:56 cuneiform-page-0013.html
+-rwxr-xr-x 1 slot4 slot4  117756 Oct 28 15:56 cuneiform-page-0014.html
+-rwxr-xr-x 1 slot4 slot4   41637 Oct 28 15:56 cuneiform-page-0015.html
+-rwxr-xr-x 1 slot4 slot4   61162 Oct 28 15:56 cuneiform-page-0016.html
+-rwxr-xr-x 1 slot4 slot4  143908 Oct 28 15:56 cuneiform-page-0017.html
+-rwxr-xr-x 1 slot4 slot4  117671 Oct 28 15:56 cuneiform-page-0018.html
+-rwxr-xr-x 1 slot4 slot4   78513 Oct 28 15:56 cuneiform-page-0019.html
+-rwxr-xr-x 1 slot4 slot4  156868 Oct 28 15:56 cuneiform-page-0020.html
+-rwxr-xr-x 1 slot4 slot4  116655 Oct 28 15:56 cuneiform-page-0021.html
+-rwxr-xr-x 1 slot4 slot4   66417 Oct 28 15:56 cuneiform-page-0022.html
+-rwxr-xr-x 1 slot4 slot4   96840 Oct 28 15:56 cuneiform-page-0023.html
+-rwxr-xr-x 1 slot4 slot4  136229 Oct 28 15:56 cuneiform-page-0024.html
+-rwxr-xr-x 1 slot4 slot4   93144 Oct 28 15:56 cuneiform-page-0025.html
+-rwxr-xr-x 1 slot4 slot4  114925 Oct 28 15:56 cuneiform-page-0026.html
+-rwxr-xr-x 1 slot4 slot4  114741 Oct 28 15:56 cuneiform-page-0027.html
+-rwxr-xr-x 1 slot4 slot4  111219 Oct 28 15:56 cuneiform-page-0028.html
+-rwxr-xr-x 1 slot4 slot4  111285 Oct 28 15:56 cuneiform-page-0029.html
+-rwxr-xr-x 1 slot4 slot4  106356 Oct 28 15:56 cuneiform-page-0030.html
+-rwxr-xr-x 1 slot4 slot4   34512 Oct 28 15:56 cuneiform-page-0031.html
+-rwxr-xr-x 1 slot4 slot4   61554 Oct 28 15:56 cuneiform-page-0032.html
+-rwxr-xr-x 1 slot4 slot4  123998 Oct 28 15:56 cuneiform-page-0033.html
+-rwxr-xr-x 1 slot4 slot4   82951 Oct 28 15:56 cuneiform-page-0034.html
+-rwxr-xr-x 1 slot4 slot4   92724 Oct 28 15:56 cuneiform-page-0035.html
+-rwxr-xr-x 1 slot4 slot4   96409 Oct 28 15:56 cuneiform-page-0036.html
+-rwxr-xr-x 1 slot4 slot4   96645 Oct 28 15:56 cuneiform-page-0037.html
+-rwxr-xr-x 1 slot4 slot4   93352 Oct 28 15:56 cuneiform-page-0038.html
+-rwxr-xr-x 1 slot4 slot4  109373 Oct 28 15:56 cuneiform-page-0039.html
+-rwxr-xr-x 1 slot4 slot4  100381 Oct 28 15:56 cuneiform-page-0040.html
+-rwxr-xr-x 1 slot4 slot4  113517 Oct 28 15:56 cuneiform-page-0041.html
+-rwxr-xr-x 1 slot4 slot4  121410 Oct 28 15:56 cuneiform-page-0042.html
+-rwxr-xr-x 1 slot4 slot4  105472 Oct 28 15:56 cuneiform-page-0043.html
+-rwxr-xr-x 1 slot4 slot4  108584 Oct 28 15:56 cuneiform-page-0044.html
+-rwxr-xr-x 1 slot4 slot4  128036 Oct 28 15:56 cuneiform-page-0045.html
+-rwxr-xr-x 1 slot4 slot4  108542 Oct 28 15:56 cuneiform-page-0046.html
+-rwxr-xr-x 1 slot4 slot4  111332 Oct 28 15:56 cuneiform-page-0047.html
+-rwxr-xr-x 1 slot4 slot4  114476 Oct 28 15:56 cuneiform-page-0048.html
+-rwxr-xr-x 1 slot4 slot4  107547 Oct 28 15:56 cuneiform-page-0049.html
+-rwxr-xr-x 1 slot4 slot4   74462 Oct 28 15:56 cuneiform-page-0050.html
+-rwxr-xr-x 1 slot4 slot4     630 Oct 28 15:56 cuneiform-page-0051.html
+-rwxr-xr-x 1 slot4 slot4     405 Oct 28 15:56 cuneiform-page-0052.html
+-rwxr-xr-x 1 slot4 slot4    5671 Oct 28 15:56 cuneiform-page-0053.html
+-rwxr-xr-x 1 slot4 slot4   26442 Oct 28 15:56 cuneiform-page-0054.html
+-rwxr-xr-x 1 slot4 slot4    1458 Oct 28 15:56 cuneiform-page-0055.html
+-rwxr-xr-x 1 slot4 slot4    3711 Oct 28 15:56 cuneiform-page-0056.html
+-rwxr-xr-x 1 slot4 slot4    1825 Oct 28 15:56 cuneiform-page-0057.html
+-rwxr-xr-x 1 slot4 slot4    3869 Oct 28 15:56 cuneiform-page-0058.html
+-rwxr-xr-x 1 slot4 slot4    1482 Oct 28 15:56 cuneiform-page-0059.html
+-rwxr-xr-x 1 slot4 slot4    3298 Oct 28 15:56 cuneiform-page-0060.html
+-rwxr-xr-x 1 slot4 slot4   28724 Oct 28 15:56 cuneiform-page-0061.html
+-rwxr-xr-x 1 slot4 slot4     775 Oct 28 15:56 cuneiform-page-0062.html
+-rwxr-xr-x 1 slot4 slot4   27843 Oct 28 15:56 cuneiform-page-0063.html
+-rwxr-xr-x 1 slot4 slot4    1599 Oct 28 15:56 cuneiform-page-0064.html
+-rwxr-xr-x 1 slot4 slot4    3370 Oct 28 15:56 cuneiform-page-0065.html
+-rwxr-xr-x 1 slot4 slot4    1694 Oct 28 15:56 cuneiform-page-0066.html
+-rwxr-xr-x 1 slot4 slot4    4287 Oct 28 15:56 cuneiform-page-0067.html
+-rwxr-xr-x 1 slot4 slot4    2637 Oct 28 15:56 cuneiform-page-0068.html
+-rwxr-xr-x 1 slot4 slot4   19844 Oct 28 15:56 cuneiform-page-0069.html
+-rwxr-xr-x 1 slot4 slot4   29289 Oct 28 15:56 cuneiform-page-0070.html
+-rwxr-xr-x 1 slot4 slot4   34729 Oct 28 15:56 cuneiform-page-0071.html
+-rwxr-xr-x 1 slot4 slot4    4316 Oct 28 15:56 cuneiform-page-0072.html
+-rwxr-xr-x 1 slot4 slot4    2818 Oct 28 15:56 cuneiform-page-0073.html
+-rwxr-xr-x 1 slot4 slot4    4745 Oct 28 15:56 cuneiform-page-0074.html
+-rwxr-xr-x 1 slot4 slot4    3673 Oct 28 15:56 cuneiform-page-0075.html
+-rwxr-xr-x 1 slot4 slot4    2901 Oct 28 15:56 cuneiform-page-0076.html
+-rwxr-xr-x 1 slot4 slot4    4478 Oct 28 15:56 cuneiform-page-0077.html
+-rwxr-xr-x 1 slot4 slot4   10425 Oct 28 15:56 cuneiform-page-0078.html
+-rwxr-xr-x 1 slot4 slot4    5848 Oct 28 15:56 cuneiform-page-0079.html
+-rwxr-xr-x 1 slot4 slot4   23460 Oct 28 15:56 cuneiform-page-0080.html
+-rwxr-xr-x 1 slot4 slot4    2622 Oct 28 15:56 cuneiform-page-0081.html
+-rwxr-xr-x 1 slot4 slot4    2833 Oct 28 15:56 cuneiform-page-0082.html
+-rwxr-xr-x 1 slot4 slot4    4004 Oct 28 15:56 cuneiform-page-0083.html
+-rwxr-xr-x 1 slot4 slot4    5038 Oct 28 15:56 cuneiform-page-0084.html
+-rwxr-xr-x 1 slot4 slot4    1577 Oct 28 15:56 cuneiform-page-0085.html
+-rwxr-xr-x 1 slot4 slot4    6213 Oct 28 15:56 cuneiform-page-0086.html
+-rwxr-xr-x 1 slot4 slot4   22681 Oct 28 15:56 cuneiform-page-0087.html
+-rwxr-xr-x 1 slot4 slot4    3533 Oct 28 15:56 cuneiform-page-0088.html
+-rwxr-xr-x 1 slot4 slot4   25659 Oct 28 15:56 cuneiform-page-0089.html
+-rwxr-xr-x 1 slot4 slot4    2335 Oct 28 15:56 cuneiform-page-0090.html
+-rwxr-xr-x 1 slot4 slot4    2650 Oct 28 15:56 cuneiform-page-0091.html
+-rwxr-xr-x 1 slot4 slot4    1836 Oct 28 15:56 cuneiform-page-0092.html
+-rwxr-xr-x 1 slot4 slot4    4111 Oct 28 15:56 cuneiform-page-0093.html
+-rwxr-xr-x 1 slot4 slot4    3146 Oct 28 15:56 cuneiform-page-0094.html
+-rwxr-xr-x 1 slot4 slot4    3316 Oct 28 15:56 cuneiform-page-0095.html
+-rwxr-xr-x 1 slot4 slot4   21728 Oct 28 15:56 cuneiform-page-0096.html
+-rwxr-xr-x 1 slot4 slot4    1478 Oct 28 15:56 cuneiform-page-0097.html
+-rwxr-xr-x 1 slot4 slot4   16824 Oct 28 15:56 cuneiform-page-0098.html
+-rwxr-xr-x 1 slot4 slot4    1906 Oct 28 15:56 cuneiform-page-0099.html
+-rwxr-xr-x 1 slot4 slot4    1251 Oct 28 15:56 cuneiform-page-0100.html
+-rwxr-xr-x 1 slot4 slot4    1569 Oct 28 15:56 cuneiform-page-0101.html
+-rwxr-xr-x 1 slot4 slot4    1475 Oct 28 15:56 cuneiform-page-0102.html
+-rwxr-xr-x 1 slot4 slot4    4600 Oct 28 15:56 cuneiform-page-0103.html
+-rwxr-xr-x 1 slot4 slot4  116581 Oct 28 15:56 cuneiform-page-0104.html
+-rwxr-xr-x 1 slot4 slot4  117513 Oct 28 15:56 cuneiform-page-0105.html
+drwxr-xr-x 2 slot4 slot4      31 Oct 28 15:56 cuneiform_fonttype
+-rw-r--r-- 1 slot4 slot4      94 Oct 28 15:56 do.sh
+-rwxr-xr-x 1 slot4 slot4 2978386 Oct 28 15:56 input.text
+chmod: cannot access `sh': No such file or directory
+/bin/sleep
+about to execute <<sh do.sh>>
+SANDBOX SPACE:
+35M	.
+Done Running 11173.2 /var/lib/condor/execute/slot4/dir_15170 Result was <0>
+Results are:total 13440
+-rw-r--r-- 1 slot4 slot4     264 Oct 28 15:59 AuditLog.11173.2
+-rw-r--r-- 1 slot4 slot4     118 Oct 28 15:56 CURLTIME_15284
+-rw-r--r-- 1 slot4 slot4   14307 Oct 28 15:59 ChtcWrapper11173.2.out
+-rw-r--r-- 1 slot4 slot4 4703655 Oct 28 15:56 SLIBS1.tar.gz
+drwxr-xr-x 2 slot4 slot4    4096 Oct 25  2011 SS
+-rw------- 1 slot4 slot4     317 Oct 28 15:56 _condor_stderr
+-rw------- 1 slot4 slot4     712 Oct 28 15:56 _condor_stdout
+-rwxr-xr-x 1 slot4 slot4   35251 Oct 28 15:56 chtcinnerwrapper
+-rwxr-xr-x 1 slot4 slot4    5393 Oct 28 15:56 condor_exec.exe
+-rwxr-xr-x 1 slot4 slot4    5587 Oct 28 15:59 cuneiform-page-0001.html
+-rwxr-xr-x 1 slot4 slot4    2575 Oct 28 15:59 cuneiform-page-0002.html
+-rwxr-xr-x 1 slot4 slot4     681 Oct 28 15:59 cuneiform-page-0003.html
+-rwxr-xr-x 1 slot4 slot4    4536 Oct 28 15:59 cuneiform-page-0004.html
+-rwxr-xr-x 1 slot4 slot4   19487 Oct 28 15:59 cuneiform-page-0005.html
+-rwxr-xr-x 1 slot4 slot4   33137 Oct 28 15:59 cuneiform-page-0006.html
+-rwxr-xr-x 1 slot4 slot4    3542 Oct 28 15:59 cuneiform-page-0007.html
+-rwxr-xr-x 1 slot4 slot4   86160 Oct 28 15:59 cuneiform-page-0008.html
+-rwxr-xr-x 1 slot4 slot4  129308 Oct 28 15:59 cuneiform-page-0009.html
+-rwxr-xr-x 1 slot4 slot4  116785 Oct 28 15:59 cuneiform-page-0010.html
+-rwxr-xr-x 1 slot4 slot4  119592 Oct 28 15:59 cuneiform-page-0011.html
+-rwxr-xr-x 1 slot4 slot4   34880 Oct 28 15:59 cuneiform-page-0012.html
+-rwxr-xr-x 1 slot4 slot4  115045 Oct 28 15:59 cuneiform-page-0013.html
+-rwxr-xr-x 1 slot4 slot4  117756 Oct 28 15:59 cuneiform-page-0014.html
+-rwxr-xr-x 1 slot4 slot4   41637 Oct 28 15:59 cuneiform-page-0015.html
+-rwxr-xr-x 1 slot4 slot4   61162 Oct 28 15:59 cuneiform-page-0016.html
+-rwxr-xr-x 1 slot4 slot4  143908 Oct 28 15:59 cuneiform-page-0017.html
+-rwxr-xr-x 1 slot4 slot4  117671 Oct 28 15:59 cuneiform-page-0018.html
+-rwxr-xr-x 1 slot4 slot4   78513 Oct 28 15:59 cuneiform-page-0019.html
+-rwxr-xr-x 1 slot4 slot4  156868 Oct 28 15:59 cuneiform-page-0020.html
+-rwxr-xr-x 1 slot4 slot4  116655 Oct 28 15:59 cuneiform-page-0021.html
+-rwxr-xr-x 1 slot4 slot4   66417 Oct 28 15:59 cuneiform-page-0022.html
+-rwxr-xr-x 1 slot4 slot4   96840 Oct 28 15:59 cuneiform-page-0023.html
+-rwxr-xr-x 1 slot4 slot4  136229 Oct 28 15:59 cuneiform-page-0024.html
+-rwxr-xr-x 1 slot4 slot4   93144 Oct 28 15:59 cuneiform-page-0025.html
+-rwxr-xr-x 1 slot4 slot4  114925 Oct 28 15:59 cuneiform-page-0026.html
+-rwxr-xr-x 1 slot4 slot4  114741 Oct 28 15:59 cuneiform-page-0027.html
+-rwxr-xr-x 1 slot4 slot4  111219 Oct 28 15:59 cuneiform-page-0028.html
+-rwxr-xr-x 1 slot4 slot4  111285 Oct 28 15:59 cuneiform-page-0029.html
+-rwxr-xr-x 1 slot4 slot4  106356 Oct 28 15:59 cuneiform-page-0030.html
+-rwxr-xr-x 1 slot4 slot4   34512 Oct 28 15:59 cuneiform-page-0031.html
+-rwxr-xr-x 1 slot4 slot4   61554 Oct 28 15:59 cuneiform-page-0032.html
+-rwxr-xr-x 1 slot4 slot4  123998 Oct 28 15:59 cuneiform-page-0033.html
+-rwxr-xr-x 1 slot4 slot4   82951 Oct 28 15:59 cuneiform-page-0034.html
+-rwxr-xr-x 1 slot4 slot4   92724 Oct 28 15:59 cuneiform-page-0035.html
+-rwxr-xr-x 1 slot4 slot4   96409 Oct 28 15:59 cuneiform-page-0036.html
+-rwxr-xr-x 1 slot4 slot4   96645 Oct 28 15:59 cuneiform-page-0037.html
+-rwxr-xr-x 1 slot4 slot4   93352 Oct 28 15:59 cuneiform-page-0038.html
+-rwxr-xr-x 1 slot4 slot4  109373 Oct 28 15:59 cuneiform-page-0039.html
+-rwxr-xr-x 1 slot4 slot4  100381 Oct 28 15:59 cuneiform-page-0040.html
+-rwxr-xr-x 1 slot4 slot4  113517 Oct 28 15:59 cuneiform-page-0041.html
+-rwxr-xr-x 1 slot4 slot4  121410 Oct 28 15:59 cuneiform-page-0042.html
+-rwxr-xr-x 1 slot4 slot4  105472 Oct 28 15:59 cuneiform-page-0043.html
+-rwxr-xr-x 1 slot4 slot4  108584 Oct 28 15:59 cuneiform-page-0044.html
+-rwxr-xr-x 1 slot4 slot4  128036 Oct 28 15:59 cuneiform-page-0045.html
+-rwxr-xr-x 1 slot4 slot4  108542 Oct 28 15:59 cuneiform-page-0046.html
+-rwxr-xr-x 1 slot4 slot4  111332 Oct 28 15:59 cuneiform-page-0047.html
+-rwxr-xr-x 1 slot4 slot4  114476 Oct 28 15:59 cuneiform-page-0048.html
+-rwxr-xr-x 1 slot4 slot4  107547 Oct 28 15:59 cuneiform-page-0049.html
+-rwxr-xr-x 1 slot4 slot4   74462 Oct 28 15:59 cuneiform-page-0050.html
+-rwxr-xr-x 1 slot4 slot4     630 Oct 28 15:59 cuneiform-page-0051.html
+-rwxr-xr-x 1 slot4 slot4     405 Oct 28 15:59 cuneiform-page-0052.html
+-rwxr-xr-x 1 slot4 slot4    5671 Oct 28 15:59 cuneiform-page-0053.html
+-rwxr-xr-x 1 slot4 slot4   26442 Oct 28 15:59 cuneiform-page-0054.html
+-rwxr-xr-x 1 slot4 slot4    1458 Oct 28 15:59 cuneiform-page-0055.html
+-rwxr-xr-x 1 slot4 slot4    3711 Oct 28 15:59 cuneiform-page-0056.html
+-rwxr-xr-x 1 slot4 slot4    1825 Oct 28 15:59 cuneiform-page-0057.html
+-rwxr-xr-x 1 slot4 slot4    3869 Oct 28 15:59 cuneiform-page-0058.html
+-rwxr-xr-x 1 slot4 slot4    1482 Oct 28 15:59 cuneiform-page-0059.html
+-rwxr-xr-x 1 slot4 slot4    3298 Oct 28 15:59 cuneiform-page-0060.html
+-rwxr-xr-x 1 slot4 slot4   28724 Oct 28 15:59 cuneiform-page-0061.html
+-rwxr-xr-x 1 slot4 slot4     775 Oct 28 15:59 cuneiform-page-0062.html
+-rwxr-xr-x 1 slot4 slot4   27843 Oct 28 15:59 cuneiform-page-0063.html
+-rwxr-xr-x 1 slot4 slot4    1599 Oct 28 15:59 cuneiform-page-0064.html
+-rwxr-xr-x 1 slot4 slot4    3370 Oct 28 15:59 cuneiform-page-0065.html
+-rwxr-xr-x 1 slot4 slot4    1694 Oct 28 15:59 cuneiform-page-0066.html
+-rwxr-xr-x 1 slot4 slot4    4287 Oct 28 15:59 cuneiform-page-0067.html
+-rwxr-xr-x 1 slot4 slot4    2637 Oct 28 15:59 cuneiform-page-0068.html
+-rwxr-xr-x 1 slot4 slot4   19844 Oct 28 15:59 cuneiform-page-0069.html
+-rwxr-xr-x 1 slot4 slot4   29289 Oct 28 15:59 cuneiform-page-0070.html
+-rwxr-xr-x 1 slot4 slot4   34729 Oct 28 15:59 cuneiform-page-0071.html
+-rwxr-xr-x 1 slot4 slot4    4316 Oct 28 15:59 cuneiform-page-0072.html
+-rwxr-xr-x 1 slot4 slot4    2818 Oct 28 15:59 cuneiform-page-0073.html
+-rwxr-xr-x 1 slot4 slot4    4745 Oct 28 15:59 cuneiform-page-0074.html
+-rwxr-xr-x 1 slot4 slot4    3673 Oct 28 15:59 cuneiform-page-0075.html
+-rwxr-xr-x 1 slot4 slot4    2901 Oct 28 15:59 cuneiform-page-0076.html
+-rwxr-xr-x 1 slot4 slot4    4478 Oct 28 15:59 cuneiform-page-0077.html
+-rwxr-xr-x 1 slot4 slot4   10425 Oct 28 15:59 cuneiform-page-0078.html
+-rwxr-xr-x 1 slot4 slot4    5848 Oct 28 15:59 cuneiform-page-0079.html
+-rwxr-xr-x 1 slot4 slot4   23460 Oct 28 15:59 cuneiform-page-0080.html
+-rwxr-xr-x 1 slot4 slot4    2622 Oct 28 15:59 cuneiform-page-0081.html
+-rwxr-xr-x 1 slot4 slot4    2833 Oct 28 15:59 cuneiform-page-0082.html
+-rwxr-xr-x 1 slot4 slot4    4004 Oct 28 15:59 cuneiform-page-0083.html
+-rwxr-xr-x 1 slot4 slot4    5038 Oct 28 15:59 cuneiform-page-0084.html
+-rwxr-xr-x 1 slot4 slot4    1577 Oct 28 15:59 cuneiform-page-0085.html
+-rwxr-xr-x 1 slot4 slot4    6213 Oct 28 15:59 cuneiform-page-0086.html
+-rwxr-xr-x 1 slot4 slot4   22681 Oct 28 15:59 cuneiform-page-0087.html
+-rwxr-xr-x 1 slot4 slot4    3533 Oct 28 15:59 cuneiform-page-0088.html
+-rwxr-xr-x 1 slot4 slot4   25659 Oct 28 15:59 cuneiform-page-0089.html
+-rwxr-xr-x 1 slot4 slot4    2335 Oct 28 15:59 cuneiform-page-0090.html
+-rwxr-xr-x 1 slot4 slot4    2650 Oct 28 15:59 cuneiform-page-0091.html
+-rwxr-xr-x 1 slot4 slot4    1836 Oct 28 15:59 cuneiform-page-0092.html
+-rwxr-xr-x 1 slot4 slot4    4111 Oct 28 15:59 cuneiform-page-0093.html
+-rwxr-xr-x 1 slot4 slot4    3146 Oct 28 15:59 cuneiform-page-0094.html
+-rwxr-xr-x 1 slot4 slot4    3316 Oct 28 15:59 cuneiform-page-0095.html
+-rwxr-xr-x 1 slot4 slot4   21728 Oct 28 15:59 cuneiform-page-0096.html
+-rwxr-xr-x 1 slot4 slot4    1478 Oct 28 15:59 cuneiform-page-0097.html
+-rwxr-xr-x 1 slot4 slot4   16824 Oct 28 15:59 cuneiform-page-0098.html
+-rwxr-xr-x 1 slot4 slot4    1906 Oct 28 15:59 cuneiform-page-0099.html
+-rwxr-xr-x 1 slot4 slot4    1251 Oct 28 15:59 cuneiform-page-0100.html
+-rwxr-xr-x 1 slot4 slot4    1569 Oct 28 15:59 cuneiform-page-0101.html
+-rwxr-xr-x 1 slot4 slot4    1475 Oct 28 15:59 cuneiform-page-0102.html
+-rwxr-xr-x 1 slot4 slot4    4600 Oct 28 15:59 cuneiform-page-0103.html
+-rwxr-xr-x 1 slot4 slot4  116581 Oct 28 15:59 cuneiform-page-0104.html
+-rwxr-xr-x 1 slot4 slot4  117513 Oct 28 15:59 cuneiform-page-0105.html
+drwxr-xr-x 2 slot4 slot4      31 Oct 28 15:56 cuneiform_fonttype
+-rw-r--r-- 1 slot4 slot4      94 Oct 28 15:56 do.sh
+-rw-r--r-- 1 slot4 slot4  481331 Oct 28 15:59 fonts.text
+-rwxr-xr-x 1 slot4 slot4 2978386 Oct 28 15:59 input.text
+drwxr-xr-x 2 slot4 slot4    8192 Oct 28 15:56 rs
