@@ -4,14 +4,18 @@ from helper.easierlife import *
 
 from ext.op.superviser_occurrences import *
 
-superviser = OccurrencesSuperviser()
-superviser.loadDict()
 
-#superviser.extract()
 
 for row in get_inputs():
 
-	docid = row["documents.docid"]
-	doc = deserialize(row["documents.document"])
+	#	log(row)
 
-	doc.get_relation_candidates(superviser)
+	o = {}
+	for key in row:
+		kk = key.split('.')[1]
+		if kk != 'id' and kk != 'features':
+			o[kk] = row[key]
+
+	print json.dumps(o)
+
+

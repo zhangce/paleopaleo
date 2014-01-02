@@ -142,7 +142,7 @@ class OccurrencesSuperviser:
 
                 overlapped = False
                 for (a,b) in self.kb_formation_temporal[e1.entity]:
-                    if max(b,large) - min(a,small) >= b-a + large-small:
+                    if max(b,large) - min(a,small) >= b-a + large-small + 10:
                         donothing = True
                     else:
                         overlapped = True

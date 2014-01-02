@@ -66,7 +66,11 @@ def deserialize(obj):
 
 def get_inputs():
 	for line in fileinput.input():
-		yield json.loads(line)
+		line = line.rstrip()
+		try:
+			yield json.loads(line)
+		except:
+			log("ERROR  :  " + line)
 
 def dump_input(OUTFILE):
 	fo = open(OUTFILE, 'w')

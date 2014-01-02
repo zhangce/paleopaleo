@@ -15,4 +15,4 @@ for f in os.listdir(BASE_FOLDER + "/tmp/"):
 	if f.endswith('.rel'):
 		for l in open(BASE_FOLDER + "/tmp/" + f):
 			if '"type": "TAXONOMY' in l:
-				print l.rstrip()
+				print l.rstrip().replace('\r', '').replace('\n', '')

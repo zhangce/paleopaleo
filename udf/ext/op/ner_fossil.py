@@ -33,6 +33,7 @@ class FossilEntityExtractor(object):
 
 			if not os.path.isdir(docdir + '/' +  folder):
 				continue
+			
 			"""
 			try:
 				for l in open(docdir + '/' +  folder + '/input.text'):
@@ -46,6 +47,7 @@ class FossilEntityExtractor(object):
 			except:
 				donothing = True
 			"""
+			
 			
 		log("LOADED DICT")
 

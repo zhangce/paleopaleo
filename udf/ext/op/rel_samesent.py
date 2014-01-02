@@ -33,6 +33,7 @@ class SameSentRelationExtractor:
         started = False
         ended = False
         
+        QUOTE = 100
         for sent in doc.entities:
             rels ={}
             rels['FORMATIONLOCATION']={}
@@ -52,6 +53,19 @@ class SameSentRelationExtractor:
                     ws = doc.sents[sent].wordseq_feature(e1, e2)
 
                     ws_dep = doc.sents[sent].dep_path(e1, e2)
+
+                    if QUOTE > 0 and random.random() < 0.1:
+
+                        QUOTE = QUOTE - 1
+
+                        doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
+                        doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
+                                        
+                        doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "-[SAMESENT PROV=" + ws + "] "))
+                        doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "-[SAMESENT PROV=" + ws_dep + "] "))
+
+                        doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
+                        doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
 
                     #print ws_dep
 
@@ -76,17 +90,17 @@ class SameSentRelationExtractor:
                         continue
                     
                         ## this is the negative example of formation
-                    if ('class' in e1.type or 'clade' in e1.type or 'subgenus' in e1.type or 'order' in e1.type or 'family' in e1.type or 'genus' in e1.type or 'species' in e1.type) and ('class' in e2.type or 'clade' in e2.type or 'subgenus' in e2.type or 'order' in e2.type or 'family' in e2.type or 'genus' in e2.type or 'species' in e2.type):
-                        
-                        if random.random() < 0.1 and (e1 != e2 and e1.entity not in e2.entity and e2.entity not in e1.entity):
-
-                            doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
-                            doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
-                        
-                            #doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "[SAMESENT PROV=" + ws + "] "))
-                           
-                            doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
-                            doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
+                    #if ('class' in e1.type or 'clade' in e1.type or 'subgenus' in e1.type or 'order' in e1.type or 'family' in e1.type or 'genus' in e1.type or 'species' in e1.type) and ('class' in e2.type or 'clade' in e2.type or 'subgenus' in e2.type or 'order' in e2.type or 'family' in e2.type or 'genus' in e2.type or 'species' in e2.type):
+                    #    
+                    #    if random.random() < 0.1 and (e1 != e2 and e1.entity not in e2.entity and e2.entity not in e1.entity):
+                    #
+                    #        doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
+                    #        doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
+                    #    
+                    #        #doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "[SAMESENT PROV=" + ws + "] "))
+                    #       
+                    #        #doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
+                    #        #doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
 
                     if ('class' in e1.type or 'clade' in e1.type or 'subgenus' in e1.type or 'order' in e1.type or 'family' in e1.type or 'genus' in e1.type or 'species' in e1.type) and e2.type == 'LOCATION':
                         doc.push_relation(Relation("LOCATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
@@ -105,10 +119,10 @@ class SameSentRelationExtractor:
                             if math.fabs(e1.words[0].insent_id-e2.words[0].insent_id) < rels['FORMATION'][e2.entity][0]:
                                 rels['FORMATION'][e2.entity]=(math.fabs(e1.words[0].insent_id-e2.words[0].insent_id), doc.get_sentrepr(sent), e1, e2)
 
-                    if ('class' in e1.type or 'clade' in e1.type or 'subgenus' in e1.type or 'order' in e1.type or 'family' in e1.type or 'genus' in e1.type or 'species' in e1.type) and e2.type == 'INTERVAL':
-                        #doc.push_relation(Relation("TEMPORAL", e1, e2, "[SAMESENT]"))
-                        doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
-                        doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
+                    #if ('class' in e1.type or 'clade' in e1.type or 'subgenus' in e1.type or 'order' in e1.type or 'family' in e1.type or 'genus' in e1.type or 'species' in e1.type) and e2.type == 'INTERVAL':
+                    #    #doc.push_relation(Relation("TEMPORAL", e1, e2, "[SAMESENT]"))
+                    #    doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
+                    #    doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
 
                     if (e1.type == 'ROCK') and e2.type == 'LOCATION':
                         
@@ -129,12 +143,12 @@ class SameSentRelationExtractor:
                         #    doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "[SAMESENT PROV=" + ws + "] " + "[SAMESENT PROV=NOTCONTAIN_COMMA] "))
                         #doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "[SAMESENT PROV=" + ws + "] "))
 
-            #for ent in rels['FORMATIONLOCATION']:
-            #	sentrepr=rels['FORMATIONLOCATION'][ent][1]
-            #	doc.push_relation(Relation("FORMATIONLOCATION", rels['FORMATIONLOCATION'][ent][2], rels['FORMATIONLOCATION'][ent][3], "[SAMESENT-NEAREST]"))
-            #for ent in rels['FORMATION']:
-            #    sentrepr=rels['FORMATION'][ent][1]
-            #    doc.push_relation(Relation("FORMATION",rels['FORMATION'][ent][2], rels['FORMATION'][ent][3], "[SAMESENT-NEARST]"))
+            for ent in rels['FORMATIONLOCATION']:
+            	sentrepr=rels['FORMATIONLOCATION'][ent][1]
+            	doc.push_relation(Relation("FORMATIONLOCATION", rels['FORMATIONLOCATION'][ent][2], rels['FORMATIONLOCATION'][ent][3], "[SAMESENT-NEAREST]"))
+            for ent in rels['FORMATION']:
+                sentrepr=rels['FORMATION'][ent][1]
+                doc.push_relation(Relation("FORMATION",rels['FORMATION'][ent][2], rels['FORMATION'][ent][3], "[SAMESENT-NEARST]"))
 	
         # extract fauna
 			
