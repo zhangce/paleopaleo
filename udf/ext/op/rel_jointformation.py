@@ -29,6 +29,7 @@ class JointFormationRelationExtractor:
                     formationtemp[rel.entity1.entity.lower()] = {}
                 formationtemp[rel.entity1.entity.lower()][rel.entity2.entity.lower()] = 1
     
+        a = """
         for rel1 in doc.relations:
             for rel2 in doc.relations:
                 if rel2.type == 'FORMATIONLOCATION' and len(formationloc[rel2.entity1.entity.lower()]) == 1:
@@ -39,6 +40,7 @@ class JointFormationRelationExtractor:
                 if rel1.type == "FORMATION" and rel2.type == 'FORMATIONTEMPORAL' and len(formationtemp[rel2.entity1.entity.lower()]) <= 3:
                     if rel1.entity2.entity == rel2.entity1.entity:
                         doc.push_relation(Relation("TEMPORAL", rel1.entity1, rel2.entity2, ("%d" % math.fabs(rel2.entity1.words[0].sentid - rel1.entity1.words[0].sentid)) +  " [JOINT(SAME FORMATION)] " + "[" + rel1.prov + "] " + "[" + rel2.prov + "] "))
+        """
 
         expands = {}
         e2e = {}
@@ -68,7 +70,8 @@ class JointFormationRelationExtractor:
                     if e1 not in final_expands:
                         final_expands[e1] = {}
                     final_expands[e1][e2] = expands[e1][e2]
-                            
+                       
+        a = """     
         history = {}
         for rel in doc.relations:
             if rel.type == 'TEMPORAL' and rel.entity1.entity not in history:
@@ -77,6 +80,7 @@ class JointFormationRelationExtractor:
                     for en2 in final_expands[rel.entity2.entity]:
                         entity2 = e2e[en2]
                         doc.push_relation(Relation("TEMPORAL", rel.entity1, entity2, " [JOINT(INTERVAL EXPANSION)] " + rel.entity2.entity + " --> " + en2))
+        """
 
         allfossils = {}
         allfossilsreldomain = {}
