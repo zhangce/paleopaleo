@@ -89,6 +89,7 @@ class FossilEntityExtractor(object):
 			for l in open(BASE_FOLDER + '/dicts/' + _file):
 				if progress % 100000 == 0:
 					log(progress)
+					#break
 				progress = progress + 1
 				(id, ent, rank, names, parents) = l.rstrip('\n').split('\t')
 				rank = int(rank)

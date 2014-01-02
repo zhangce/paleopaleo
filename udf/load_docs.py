@@ -138,8 +138,6 @@ def process(task):
 	except:
 		donothing = True
 
-
-
 	#lock.acquire()
 	#print json.dumps({"docid":DOCID, "document":serialize(doc)})
 	#sys.stdout.flush()

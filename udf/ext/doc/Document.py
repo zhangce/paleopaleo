@@ -200,6 +200,8 @@ class Document:
     def push_entity(self, entity):
                 
         self.entities[entity.sentid].append(entity)
+        for w in entity.words:
+            w.ner = "#" + entity.type + "#"
 
     def push_relation(self, relation):
         self.relations.append(relation)
