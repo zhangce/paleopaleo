@@ -50,7 +50,7 @@ class IntervalEntityExtractor:
 
 								if phrase.lower() in self.dict_intervals:
 										doc.titleentities.append(Entity("INTERVAL", self.dict_intervals[phrase.lower()], []))
-										log("INTERVAL : "+ phrase.lower())
+										#log("INTERVAL : "+ phrase.lower())
 										for i in range(start, end):
 												history[i] = 1
 				
@@ -69,7 +69,7 @@ class IntervalEntityExtractor:
 												doc.push_entity(entity)
 												for i in range(start, end):
 													history[i]=1
-												log(str(entity.sentid) + " : " + "INTERVAL : " + entity.entity)
+												#log(str(entity.sentid) + " : " + "INTERVAL : " + entity.entity)
 										if '-' in phrase:
 												for part in phrase.split('-'):
 														if part.lower() in self.dict_intervals:

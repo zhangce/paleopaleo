@@ -153,6 +153,8 @@ def do():
 	for docid in os.listdir(INPUT_FOLDER):
 		if docid.startswith('.'): continue
 
+		#if '26937' not in docid: continue
+
 		task = Task()
 		task.docid = docid
 		tasks.append(task)
@@ -168,7 +170,7 @@ def do():
 
 		#tasks.append(task)
 
-	pool = Pool(60, initializer, (lock,))
+	pool = Pool(8, initializer, (lock,))
 	pool.map(process, tasks)
 
 #import cProfile

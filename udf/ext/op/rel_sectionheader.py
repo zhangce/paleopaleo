@@ -107,7 +107,7 @@ class SectionHeaderRealtionExtraction:
                                     #    import pdb
                                     #    pdb.set_trace()
 
-                                        log('#####' + e1.entity + '-->' + e2.entity)
+                                        #log('#####' + e1.entity + '-->' + e2.entity)
                                         doc.push_relation(Relation("TAXONOMY", e1, e2, "[SYSTEMATIC PALEONTOLOGY SECTION HEADER TYPE 2]"))
                                         
                         break

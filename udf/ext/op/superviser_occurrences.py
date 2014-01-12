@@ -32,6 +32,25 @@ class OccurrencesSuperviser:
         for r in self.ranks.keys():
             self.ranks[r+"!"] = self.ranks[r]
 
+        for l in open(BASE_FOLDER + "/dicts/macrostrat_supervision.tsv"):
+            (name1, n1, n2, n3, n4) = l.split('\t')
+            name1 = name1.replace(' Fm', '').replace(' Mbr', '').replace(' Gp', '')
+            n1 = float(n1)
+            n2 = float(n2)
+            n3 = float(n3)
+            n4 = float(n4.rstrip())
+
+            #log(name1)
+            #log(n1)
+            #log(n2)
+            #log(n3)
+            #log(n4)
+
+            for rock in [name1.lower(), name1.lower() + " formation", name1.lower() + " member"]:
+                if rock not in self.kb_formation_temporal:
+                    self.kb_formation_temporal[rock] = {}
+                self.kb_formation_temporal[rock][(min(n1, n2, n3, n4), max(n1, n2, n3, n4))] = 1
+
 
         for l in open(BASE_FOLDER + '/dicts/paleodb_taxonomy.tsv'):
             (refid, rel, tax1, tax2) = l.rstrip().split('\t')
@@ -45,7 +64,6 @@ class OccurrencesSuperviser:
             if tax1 not in self.kb_taxonomy:
                 self.kb_taxonomy[tax1] = {}
             self.kb_taxonomy[tax1][tax2] = rel
-
 
         for l in open(BASE_FOLDER + "/dicts/countrycode.tsv"):
             (abbrv, fullname) = l.rstrip().split('\t')
@@ -72,8 +90,8 @@ class OccurrencesSuperviser:
                         self.kb_fossil_formation[fossil][rock] = {}
                     self.kb_fossil_formation[fossil][rock][reference_no] = 1
 
-            for rock in [formation]:
-                if rock not in self.kb_formation_temporal:
+            for rock in [formation.lower()]:
+                if rock not in self.kb_formation_country:
                     self.kb_formation_temporal[rock] = {}
                     self.kb_formation_location[rock] = {}
                     self.kb_formation_country[rock] = {}
@@ -90,14 +108,14 @@ class OccurrencesSuperviser:
             ans = None
 
             if e2.type != 'ROCK':
-                log(e1.entity + "F---F" + e2.entity)
+                #log(e1.entity + "F---F" + e2.entity)
                 ans = False     
 
             
             if e1.entity in self.kb_fossil_formation:
 
                 if e2.entity in self.kb_fossil_formation[e1.entity]:
-                    log(e1.entity + "F+++F" + e2.entity)
+                    #log(e1.entity + "F+++F" + e2.entity)
                     ans = True
 
             #if ans == None: ans = False 
@@ -108,7 +126,7 @@ class OccurrencesSuperviser:
             ans = None
 
             if e1.type != 'ROCK' or e2.type != 'LOCATION':
-                log(e1.entity + "L---L" + e2.entity)
+                #log(e1.entity + "L---L" + e2.entity)
                 ans = False  
 
             if e1.entity in self.kb_formation_country:
@@ -118,10 +136,10 @@ class OccurrencesSuperviser:
                     #log(e1.entity + " L----" + country)
                     #log(self.kb_formation_country[e1.entity])
                     if country in self.kb_formation_country[e1.entity]:
-                        log(e1.entity + "L+++L" + e2.entity)
+                        #log(e1.entity + "L+++L" + e2.entity)
                         ans = True
                     else:
-                        log(e1.entity + "L---L" + e2.entity)
+                        #log(e1.entity + "L---L" + e2.entity)
                         ans = False
             #if ans == None: ans = False
             return ans
@@ -131,7 +149,7 @@ class OccurrencesSuperviser:
             ans = None
 
             if e1.type != 'ROCK' or e2.type != 'INTERVAL':
-                log(e1.entity + "T---T" + e2.entity)
+                #log(e1.entity + "T---T" + e2.entity)
                 ans = False
                 return ans
 
@@ -148,11 +166,11 @@ class OccurrencesSuperviser:
                         overlapped = True
 
                 if overlapped == True:
-                    log(e1.entity + "T+++T" + e2.entity)
+                    #log(e1.entity + "T+++T" + e2.entity)
                     ans = True
                 else:
                     #log(self.kb_formation_temporal[e1.entity])
-                    log(e1.entity + "T~~~T" + e2.entity)
+                    #log(e1.entity + "T~~~T" + e2.entity)
                     ans = False
 
             #if ans == None: ans = False

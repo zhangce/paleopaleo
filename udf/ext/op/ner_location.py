@@ -67,8 +67,6 @@ class LocationEntityExtractor:
             import os.path
             if not os.path.isdir(docdir + '/' +  folder):
                 continue
-
-            """
             try:
                 for l in open(docdir + '/' +  folder + '/input.text'):
                     ss = l.rstrip().split('\t')
@@ -80,10 +78,7 @@ class LocationEntityExtractor:
                         prev = ss[1].lower()
             except:
                 donothing = True
-            """
-            
 
-            
         log("LOADED DICT")
 
 
@@ -114,8 +109,8 @@ class LocationEntityExtractor:
                 added = False
                 for name in names:
                     name = name.lower()
-                    #if not (name in words):
-                    #    continue
+                    if not (name in words):
+                        continue
                     #print name
                     if name not in locs: locs[name] = {}
                     locs[name][id] = "1"
@@ -311,7 +306,7 @@ class LocationEntityExtractor:
                                 break
                         if nearest_number != -1 and (nearest_number - end) < 3: badnames[phrase.lower()] = 2
 
-        log(badnames)
+        #log(badnames)
 
         started = False
         ended = False
@@ -345,7 +340,7 @@ class LocationEntityExtractor:
 
                                             
                     if phrase.lower() in locmapping and phrase.lower() not in badnames:
-                        log("LOCATION      " + phrase.lower() + "--->" + self.id2ents[locmapping[phrase.lower()]])
+                        #log("LOCATION      " + phrase.lower() + "--->" + self.id2ents[locmapping[phrase.lower()]])
                         entity = Entity("LOCATION", self.id2ents[locmapping[phrase.lower()]], sent.words[start:end])
                         doc.push_entity(entity)
                         for i in range(start, end):

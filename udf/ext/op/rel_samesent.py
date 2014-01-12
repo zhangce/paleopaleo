@@ -54,18 +54,18 @@ class SameSentRelationExtractor:
 
                     ws_dep = doc.sents[sent].dep_path(e1, e2)
 
-                    if QUOTE > 0 and random.random() < 0.1:
-
-                        QUOTE = QUOTE - 1
-
-                        doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
-                        doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
-                                        
-                        doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "-[SAMESENT PROV=" + ws + "] "))
-                        doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "-[SAMESENT PROV=" + ws_dep + "] "))
-
-                        doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
-                        doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
+                    #if QUOTE > 0 and random.random() < 0.1:
+                    #
+                    #    QUOTE = QUOTE - 1
+                    #
+                    #    doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
+                    #    doc.push_relation(Relation("FORMATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
+                    #                    
+                    #    doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "-[SAMESENT PROV=" + ws + "] "))
+                    #    doc.push_relation(Relation("FORMATIONTEMPORAL", e1, e2, "-[SAMESENT PROV=" + ws_dep + "] "))
+                    #
+                    #    doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws + "] "))
+                    #    doc.push_relation(Relation("FORMATIONLOCATION", e1, e2, "[SAMESENT PROV=" + ws_dep + "] "))
 
                     #print ws_dep
 

@@ -248,6 +248,12 @@ class Document:
                     if e.entity in self.ent_author_map:
                         e.author_year = self.ent_author_map[e.entity]["author"] + "\t" + self.ent_author_map[e.entity]["year"]
 
+        for e in self.titleentities:
+            eid_ct = eid_ct + 1
+            eid = "DOC_" + self.docid + "_TITLEENT_%d" % eid_ct
+            e.eid = eid
+
+
         rid_ct = 0
         for rel in self.relations:
             rid_ct = rid_ct + 1
@@ -261,6 +267,10 @@ class Document:
             for e in self.entities[sentid]:
                 fo.write(json.dumps({"docid":self.docid, "type":e.type, "eid":e.eid, "entity":e.entity, "features":""}))
                 fo.write('\n')
+
+        for e in self.titleentities:
+            fo.write(json.dumps({"docid":self.docid, "type":e.type, "eid":e.eid, "entity":e.entity, "features":""}))
+            fo.write('\n')
                     
     def get_relation_candidates(self, superviser, fo):
     

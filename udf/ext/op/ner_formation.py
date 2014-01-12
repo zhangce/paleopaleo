@@ -129,6 +129,6 @@ class FormationEntityExtractor:
 								if ent.phrase.strip().lower()==phrase.strip().lower() or phrase.strip().lower() in ent.phrase.strip().lower():
 									c = False
 						if c:
-							entity = Entity("ROCK", lemma.lower(), sent.words[start:end], good_names[phrase.lower()])
+							entity = Entity("ROCK", good_names[phrase.lower()], sent.words[start:end], good_names[phrase.lower()])
 							doc.push_entity(entity)
 
